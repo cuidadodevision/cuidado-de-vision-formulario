@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuidado de Visión — Registro de Afiliados</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:Calibri,system-ui,sans-serif;background:#F5F5F5;color:#1a1a1a;min-height:100vh;}
+
+/* ---- NAVBAR ---- */
+.navbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:#024442;padding:14px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.navbar-logo{display:flex;align-items:center;gap:8px;}
+.navbar-dot{width:9px;height:9px;border-radius:50%;background:#4B9F9F;}
+.navbar-name{color:#fff;font-size:18px;font-weight:700;letter-spacing:-0.3px;}
+.navbar-tagline{color:rgba(255,255,255,0.4);font-size:12px;}
+
+/* ---- HERO ---- */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(160deg,#024442 0%,#035e5b 55%,#4B9F9F 100%);
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:100px 24px 60px;text-align:center;
+}
+.hero-logo{display:flex;align-items:center;gap:10px;margin-bottom:8px;justify-content:center;}
+.hero-logo-dot{
+  width:14px;height:14px;border-radius:50%;background:#4B9F9F;
+  box-shadow:0 0 0 3px rgba(75,159,159,0.3);
+}
+.hero-logo-text{color:#fff;font-size:34px;font-weight:800;letter-spacing:-0.5px;}
+.hero-tagline{color:rgba(255,255,255,0.6);font-size:16px;margin-bottom:24px;}
+.hero-desc{
+  color:rgba(255,255,255,0.5);font-size:15px;line-height:1.7;
+  max-width:480px;margin:0 auto 40px;
+}
+.hero-desc strong{color:rgba(255,255,255,0.75);font-weight:600;}
+
+/* ---- BOTÓN ---- */
+.btn{
+  display:inline-block;padding:14px 36px;border:none;border-radius:10px;
+  font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;
+  text-decoration:none;transition:all 0.15s;
+}
+.btn-primary{background:#4B9F9F;color:#fff;}
+.btn-primary:hover{background:#3d8a8a;}
+
+/* ---- SECCIÓN FORMULARIO ---- */
+.form-section{
+  background:#F5F5F5;
+  padding:60px 24px 80px;
+  display:flex;flex-direction:column;align-items:center;
+}
+.section-label{
+  font-size:11px;font-weight:700;color:#4B9F9F;
+  text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px;
+  text-align:center;
+}
+.section-title{
+  font-size:22px;font-weight:700;color:#1a1a1a;
+  margin-bottom:6px;text-align:center;
+}
+.section-sub{
+  font-size:14px;color:#666;margin-bottom:36px;
+  text-align:center;line-height:1.5;
+}
+.iframe-wrap{
+  width:100%;max-width:660px;
+  background:#fff;border-radius:16px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.06);
+  overflow-x:auto;padding:8px;
+}
+.iframe-wrap iframe{display:block;}
+
+/* ---- FOOTER ---- */
+footer{
+  background:#024442;padding:20px 24px;text-align:center;
+  color:rgba(255,255,255,0.4);font-size:12px;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-logo">
+    <div class="navbar-dot"></div>
+    <span class="navbar-name">Cuidado de Visión</span>
+  </div>
+  <span class="navbar-tagline">Tu bienestar óptico</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-logo">
+    <div class="hero-logo-dot"></div>
+    <span class="hero-logo-text">Cuidado de Visión</span>
+  </div>
+  <p class="hero-tagline">Tu bienestar óptico, sin complicaciones</p>
+  <p class="hero-desc">
+    Cuidado de Visión es el programa de afiliación al cuidado visual de <strong>MusiuOptica</strong>.<br>
+    Accede a descuentos en monturas, lentes y exámenes visuales con una membresía mensual.<br>
+    Completa el formulario y da el primer paso hacia tu bienestar óptico.
+  </p>
+  <a class="btn btn-primary" href="#formulario">Registrarme ahora</a>
+</section>
+
+<!-- FORMULARIO -->
+<section class="form-section" id="formulario">
+  <div class="section-label">Formulario de registro</div>
+  <h2 class="section-title">Inicia tu afiliación</h2>
+  <p class="section-sub">Completa el formulario con tus datos para unirte a Cuidado de Visión.</p>
+  <div class="iframe-wrap">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSewoRFOAEPR36R8UravLUw_X9kXNOEnRvCvlfHS2e8M_CINXw/viewform?embedded=true"
+      width="640" height="1212" frameborder="0" marginheight="0" marginwidth="0"
+    >Cargando…</iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 MusiuOptica C.A. — Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
